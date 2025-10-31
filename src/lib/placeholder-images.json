@@ -1,0 +1,40 @@
+{
+  "placeholderImages": [
+    {
+      "id": "room1",
+      "description": "A modern meeting room with a large window.",
+      "imageUrl": "https://images.unsplash.com/photo-1462826303086-329426d1aef5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZWV0aW5nJTIwcm9vbXxlbnwwfHx8fDE3NjE4ODE0MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "meeting room"
+    },
+    {
+      "id": "room2",
+      "description": "A cozy huddle room with comfortable chairs.",
+      "imageUrl": "https://images.unsplash.com/photo-1497366412874-3415097a27e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxvZmZpY2UlMjBzcGFjZXxlbnwwfHx8fDE3NjE3OTEwMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office space"
+    },
+    {
+      "id": "room3",
+      "description": "A large conference room with a long table.",
+      "imageUrl": "https://images.unsplash.com/photo-1462826303086-329426d1aef5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb25mZXJlbmNlJTIwcm9vbXxlbnwwfHx8fDE3NjE4ODE0Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "conference room"
+    },
+    {
+      "id": "room4",
+      "description": "A small room for one-on-one meetings.",
+      "imageUrl": "https://images.unsplash.com/photo-1594732832278-abd644401426?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzbWFsbCUyMG9mZmljZXxlbnwwfHx8fDE3NjE4ODE0MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "small office"
+    },
+    {
+      "id": "room5",
+      "description": "A bright and airy collaboration space.",
+      "imageUrl": "https://images.unsplash.com/photo-1641060272821-df59e2c0b5ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzYxODgwMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern office"
+    },
+    {
+      "id": "room6",
+      "description": "A formal boardroom with executive chairs.",
+      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib2FyZHJvb218ZW58MHx8fHwxNzYxODk2NTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "boardroom"
+    }
+  ]
+}

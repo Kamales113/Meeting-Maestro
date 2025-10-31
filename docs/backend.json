@@ -1,0 +1,132 @@
+
+{
+  "entities": {
+    "Room": {
+      "title": "Room",
+      "type": "object",
+      "description": "Represents a meeting room in the office.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the room."
+        },
+        "capacity": {
+          "type": "number",
+          "description": "Maximum capacity of the room (number of people)."
+        },
+        "equipment": {
+          "type": "array",
+          "description": "List of equipment available in the room.",
+          "items": {
+            "type": "string",
+            "enum": ["Projector", "Whiteboard", "Conference Phone", "TV"]
+          }
+        },
+        "imageUrl": {
+            "type": "string",
+            "description": "URL of an image of the room."
+        },
+        "imageHint": {
+            "type": "string",
+            "description": "Hint for AI to find a better image."
+        }
+      },
+      "required": [
+        "name",
+        "capacity",
+        "imageUrl",
+        "imageHint"
+      ]
+    },
+    "Booking": {
+      "title": "Booking",
+      "type": "object",
+      "description": "Represents a booking for a meeting room.",
+      "properties": {
+        "roomId": {
+          "type": "string",
+          "description": "ID of the booked room."
+        },
+        "userId": {
+          "type": "string",
+          "description": "ID of the user who made the booking."
+        },
+        "userName": {
+            "type": "string",
+            "description": "Name of the user who made the booking."
+        },
+        "userImage": {
+            "type": "string",
+            "description": "Profile image URL of the user."
+        },
+        "startTime": {
+          "type": "string",
+          "description": "Start time of the booking.",
+          "format": "date-time"
+        },
+        "endTime": {
+          "type": "string",
+          "description": "End time of the booking.",
+          "format": "date-time"
+        },
+        "title": {
+            "type": "string",
+            "description": "Title of the meeting."
+        }
+      },
+      "required": [
+        "roomId",
+        "userId",
+        "userName",
+        "startTime",
+        "endTime",
+        "title"
+      ]
+    },
+    "User": {
+      "title": "User",
+      "type": "object",
+      "description": "Represents a user of the meeting room booking system.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the user."
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address of the user.",
+          "format": "email"
+        }
+      },
+      "required": [
+        "name",
+        "email"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password"
+    ]
+  },
+  "firestore": {
+    "/rooms/{roomId}": {
+      "schema": {
+        "$ref": "#/entities/Room"
+      },
+      "description": "Stores information about each meeting room."
+    },
+    "/bookings/{bookingId}": {
+      "schema": {
+        "$ref": "#/entities/Booking"
+      },
+      "description": "Stores all bookings for all rooms."
+    },
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/User"
+      },
+      "description": "Stores user profile information."
+    }
+  }
+}
